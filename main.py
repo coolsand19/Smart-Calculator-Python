@@ -24,7 +24,7 @@ def main():
         c = 1
 
 
-def add(a,b):
+def Add(a,b):
     return a+b
 
 def Subtract(a,b):
@@ -38,6 +38,11 @@ def Divide(a,b):
         return a/b
     except ZeroDivisionError:            
         return "Error! Division by zero."
+def Modulus(a,b):
+    try:
+        return a%b
+    except ZeroDivisionError:            
+        return "Error! Division by zero."
     
 def parse_equation(equation):
      # This regex captures: operand1, operator, operand2
@@ -47,7 +52,7 @@ def parse_equation(equation):
         if not ch.isalpha():
             chars.append(ch);
     neq = "".join(chars)
-    match = re.match(r'^\s*([-\d.]+)\s*([+\-*/xX÷])\s*([-\d.]+)\s*$', neq)
+    match = re.match(r'^\s*([-\d.]+)\s*([+\-*/xX÷%])\s*([-\d.]+)\s*$', neq)
     if match:
         operand1 = float(match.group(1))
         operator = match.group(2)
@@ -75,8 +80,10 @@ def makeEquation(l1):
                 operator = '-'
             elif r in ('*', 'x', 'X', 'times', 'multiply', 'multiplication'):
                 operator = '*'
-            elif r in ('/', '÷', 'divide', 'division'):
+            elif r in ('/', '÷', 'divide', 'division','divided', 'by'):
                 operator = '/'
+            elif r in ('%', 'mod', 'modulus'):
+                operator = '%'
             else:
                 try:
                     num = float(r)
@@ -88,13 +95,15 @@ def makeEquation(l1):
                     continue
     if operator != None and oprd1 and oprd2 is not None:
         if operator == '+':
-            return add(oprd1, oprd2)
+            return Add(oprd1, oprd2)
         elif operator == '-':
             return Subtract(oprd1, oprd2)
         elif operator == '*':
             return Multiply(oprd1, oprd2)
         elif operator == '/':
             return Divide(oprd1, oprd2)
+        elif operator == '%':   
+            return Modulus(oprd1, oprd2)
 
 
 if __name__ == "__main__":
