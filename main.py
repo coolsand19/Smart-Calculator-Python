@@ -13,6 +13,7 @@ def main():
         sentence = input("Enter your query for calculation: ")
         l1 = sentence.split()
         if len(l1)==1 and (l1[0] == 'false' or l1[0] == 'False' or l1[0] == 'exit' or l1[0] == 'quit'):
+           print("Thanks...")
            break
         ans = makeEquation(l1)
         if ans is None:
@@ -76,9 +77,9 @@ def makeEquation(l1):
             r = r.lower()
             if r in ('+', 'plus', 'add', 'addition'):
                 operator = '+'
-            elif r in ('-', 'minus', 'subtract', 'subtraction', 'sub'):
+            elif r in ('-', 'minus', 'subtract', 'subtraction', 'sub', 'difference'):
                 operator = '-'
-            elif r in ('*', 'x', 'X', 'times', 'multiply', 'multiplication'):
+            elif r in ('*', 'x', 'X', 'times', 'multiply', 'multiplication','product'):
                 operator = '*'
             elif r in ('/', '÷', 'divide', 'division','divided', 'by'):
                 operator = '/'
