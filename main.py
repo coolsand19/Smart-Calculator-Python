@@ -63,10 +63,9 @@ def makeEquation(l1):
     oprd2 = None
     if len(l1) == 1:
         result = parse_equation(l1[0])
-        print(result)
-        oprd1 = result[0]
-        operator = result[1]    
-        oprd2 = result[2]
+        if result is None:
+            return None
+        oprd1,operator,oprd2 = result
     else:
         for r in l1:
             r = r.lower()
