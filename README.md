@@ -2,6 +2,17 @@
 
 This project contains a simple calculator that can parse natural language queries and a web interface to interact with it.
 
+## Screenshots of output
+
+### Before any execution
+![Before any execution](photos/first.jpeg)
+
+### Query execution
+![Query execution](photos/second.jpeg)
+
+### Calculator execution
+![Calculator execution](photos/third.jpeg)
+
 ## How to run the web application
 
 1.  **Start the backend server:**
