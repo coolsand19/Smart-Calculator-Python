@@ -1,7 +1,5 @@
 import re
 
-
-
 print("Making calculator...")
 
 def main():

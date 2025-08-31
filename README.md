@@ -1,29 +1,25 @@
-## Sample Output
+# Smart Calculator
 
-Making calculator...
-Welcome to Smart Calculator
-Enter your query for calculation: 234*343
-Answer: 80262.0
+This project contains a simple calculator that can parse natural language queries and a web interface to interact with it.
 
-Type exit, quit or false to end the program
-Hello again!
-Welcome to Smart Calculator
-Enter your query for calculation: Divide 5 with 5
-Answer: 1.0
+## How to run the web application
 
-Type exit, quit or false to end the program
-Hello again!
-Welcome to Smart Calculator
-Enter your query for calculation: Hello please sub 45 - 10
-Answer: 35.0
+1.  **Start the backend server:**
 
-Type exit, quit or false to end the program
-Hello again!
-Welcome to Smart Calculator
-Enter your query for calculation: add 5664 with 34
-Answer: 5698.0
+    ```bash
+    uvicorn api:app --reload
+    ```
 
-Type exit, quit or false to end the program
-Hello again!
-Welcome to Smart Calculator
-Enter your query for calculation: exit
+2.  **Open the frontend:**
+
+    Open the `index.html` file in your web browser.
+
+3.  **Use the calculator:**
+
+    Enter your calculation query in the input box and click "Calculate".
+
+## How to run the command-line application
+
+```bash
+python main.py
+```
