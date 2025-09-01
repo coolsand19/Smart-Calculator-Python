@@ -4,14 +4,32 @@ This project contains a simple calculator that can parse natural language querie
 
 ## Screenshots of output
 
-### Before any execution
-![Before any execution](photos/first.jpeg)
+### Before any execution<br>
+(<img src="photos/first.jpeg" width="300">)
 
-### Query execution
-![Query execution](photos/second.jpeg)
+### Query execution<br>
+(<img src="photos/second.jpeg" width="300">)
 
-### Calculator execution
-![Calculator execution](photos/third.jpeg)
+### Calculator execution<br>
+(<img src="photos/third.jpeg" width="300">)
+
+## Prerequisites
+
+- Python 3.6+
+
+## Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/SmartCalculator.git
+    ```
+
+2.  **Install the dependencies:**
+
+    ```bash
+    pip install fastapi uvicorn
+    ```
 
 ## How to run the web application
 
