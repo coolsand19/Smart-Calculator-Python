@@ -5,13 +5,13 @@ This project contains a simple calculator that can parse natural language querie
 ## Screenshots of output
 
 ### Before any execution<br>
-(<img src="photos/first.jpeg" width="300">)
+<img src="photos/first.jpeg" width="300">
 
 ### Query execution<br>
-(<img src="photos/second.jpeg" width="300">)
+<img src="photos/second.jpeg" width="300">
 
 ### Calculator execution<br>
-(<img src="photos/third.jpeg" width="300">)
+<img src="photos/third.jpeg" width="300">
 
 ## Prerequisites
 
